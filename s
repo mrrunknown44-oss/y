@@ -1,21 +1,21 @@
-the current machine's 2-letter geographic region to be sent to the backend service to function properly (ex. "US").
-
-Do you agree to all the source agreements terms?
-[Y] Yes  [N] No: y
-Found Python 3.11 [Python.Python.3.11] Version 3.11.9
-This application is licensed to you by its owner.
-Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
-Downloading https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe
-  ██████████████████████████████  25.0 MB / 25.0 MB
-Successfully verified installer hash
-Starting package install...
-Successfully installed
-
-C:\Windows\system32>
-C:\Windows\system32>
-C:\Windows\system32>set PATH=%PATH%;%LOCALAPPDATA%\Programs\Python\Python311\Scripts;%LOCALAPPDATA%\Programs\Python\Python311
-
-C:\Windows\system32>python --version
-Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
-
-C:\Windows\system32>
+\system32>python client.py
+Traceback (most recent call last):
+  File "C:\Windows\system32\client.py", line 10, in <module>
+    import pyautogui
+  File "C:\Users\lyhar\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyautogui\__init__.py", line 180, in <module>
+    import pyscreeze
+  File "C:\Users\lyhar\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyscreeze\__init__.py", line 27, in <module>
+    import cv2
+  File "C:\Users\lyhar\AppData\Local\Programs\Python\Python311\Lib\site-packages\cv2\__init__.py", line 11, in <module>
+    import numpy
+  File "C:\Users\lyhar\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py", line 125, in <module>
+    from numpy.__config__ import show_config
+  File "C:\Users\lyhar\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+  File "C:\Users\lyhar\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\__init__.py", line 24, in <module>
+    from . import multiarray
+  File "C:\Users\lyhar\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\multiarray.py", line 11, in <module>
+    from . import _multiarray_umath, overrides
+RuntimeError: NumPy was built with baseline optimizations:
+(X86_V2) but your machine doesn't support:
+(X86_V2).
